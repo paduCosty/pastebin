@@ -7,5 +7,5 @@ kernel:
     type: annotation
 
 app_lucky_number:
-    path: /lucky/number
-    controller: App\Controller\LuckyController::number
+    path: /paste/add
+    controller: App\Controller\Pastebin::number
