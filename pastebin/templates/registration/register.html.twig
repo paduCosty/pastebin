@@ -3,6 +3,10 @@
 {% block title %}Register{% endblock %}
 
 {% block body %}
+    <div> {# Include section #}
+        {% include('/main/header.html.twig') %}
+    </div>
+
     <div style="text-align: center;">
         <h1>Register</h1>
 
@@ -13,7 +17,7 @@
         }) }}
         {{ form_row(registrationForm.agreeTerms) }}
 
-        <button type="submit" class="btn">Register</button>
+        <button type="submit" class="btn btn-outline-danger">Register</button>
         {{ form_end(registrationForm) }}
     </div>
 {% endblock %}
